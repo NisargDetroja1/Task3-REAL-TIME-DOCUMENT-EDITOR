@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Collaborative Editor</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <div class="container">
+
+        <div class="top-bar">
+
+            <h1>
+                📝 Collaborative Editor
+            </h1>
+
+            <div class="status">
+
+                <span id="liveStatus">
+                    ● Live
+                </span>
+
+                <span id="users">
+                    Users: 0
+                </span>
+
+            </div>
+
+        </div>
+
+        <textarea
+        id="editor"
+        placeholder="Start typing here...">
+        </textarea>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
